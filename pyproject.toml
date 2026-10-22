@@ -1,0 +1,23 @@
+[project]
+name = "learn-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fares Elsadek", email = "fares7elsadek@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-google-genai>=4.4.2",
+    "langchain-google-vertexai>=3.2.4",
+    "pydantic>=2.14.1",
+    "pydantic-settings>=2.16.1",
+]
+
+[project.scripts]
+learn-langchain = "learn_langchain:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
